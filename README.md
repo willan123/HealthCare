@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+HealthCare is a web portal, integrated with mobile, designed to empower Community Health Workers in Bangladesh to change the future of pregnancy.
+The current app is designed to be the basis of what will become the full HealthCare app, designed to provide care every step of the way, focus efforts with actionable data, and to be a single stop for all patient information.
