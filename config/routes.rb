@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get 'coming_soon' => 'pages#coming_soon'
 
   get 'dashboard' => 'dashboard#index'
   get 'dashboard/schedule'
