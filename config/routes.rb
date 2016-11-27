@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
-
   # You can have the root of your site routed with "root"
-  root 'messages#index'
+  root 'pages#index'
 
-  post 'messages/receive'
+  devise_for :users
+
+
+  get 'dashboard' => 'dashboard#index'
+  get 'dashboard/schedule'
+  get 'dashboard/patients'
+
+  get 'pages' => 'pages#index'
+
+
   get 'messages/sms'
-
-  #get 'messages/send' => 'messages#send'
+  post 'messages/receive'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
