@@ -10,18 +10,18 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right" >
+			<ul class="nav navbar-nav navbar-right" style="padding-right: 10px">
 				<li>
-					<a class="page-scroll" href="/dashboard" style="margin-top: 10px;font-size: 15px;">Dashboard</a>
+					<a class="page-scroll" href="/dashboard" style="margin-top: 15px;font-size: 15px;">Dashboard</a>
 				</li>
 				<li>
-					<a class="page-scroll" href="/coming_soon" style="margin-top: 10px;font-size:15px;">Training</a>
+					<a class="page-scroll" href="/coming_soon" style="margin-top: 15px;font-size:15px;">Training</a>
 				</li>
 				<% if user_signed_in? %>
-				  <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :style => "margin-top: 10px; font-size:15px", :class => 'page-scroll' %></li>
+				  <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :style => "margin-top: 15px; font-size:15px", :class => 'page-scroll' %></li>
 			  <% else %>
-				  <li><%= link_to "Sign up", new_user_registration_path, :style => "margin-top: 10px; font-size:15px", :class => 'navbar-link'  %></li>
-				  <li><%= link_to "Login", new_user_session_path, :style => "margin-top: 10px; font-size:15px", :class => 'navbar-link'  %></li>
+				  <li><%= link_to "Sign up", new_user_registration_path, :style => "margin-top: 15px; font-size:15px", :class => 'navbar-link'  %></li>
+				  <li><%= link_to "Login", new_user_session_path, :style => "margin-top: 15px; font-size:15px", :class => 'navbar-link'  %></li>
 				<% end %>
 			</ul>
 		</div>
