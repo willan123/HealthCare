@@ -9,11 +9,19 @@ class MessagesController < ApplicationController
     message_body = params["Body"]
     from_number = params["From"]
     boot_twilio
-    sms = @client.messages.create(
-      from: Rails.application.secrets.twilio_number,
-      to: from_number,
-      body: "Critical: 200 University Ave - William Nippard - +16136989868 \n High Risk: 151 Charles Street West - Jacob Willemsma - +15192220686"
-    )
+    if (message_body == "Critical" || message_body == "critical")
+      sms = @client.messages.create(
+        from: Rails.application.secrets.twilio_number,
+        to: from_number,
+        body: "200 University Ave - William Nippard - +16136989868 \n 151 Charles Street West - Jacob Willemsma - +15192220686"
+      )
+    elsif (message_body == "Schedule" || message_body == "schedule")
+      sms = @client.messages.create(
+        from: Rails.application.secrets.twilio_number,
+        to: from_number,
+        body: "Example schedule"
+      )
+    end
   end
 
   def sms

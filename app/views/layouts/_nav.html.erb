@@ -5,7 +5,7 @@
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand page-scroll" href="#page-top"><%= image_tag "logo.png", { :id => "logo", :style => "width: 140px" } %></a>
+			<a class="navbar-brand page-scroll" href="/home"><%= image_tag "logo.png", { :id => "logo", :style => "width: 140px" } %></a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -18,7 +18,6 @@
 					<a class="page-scroll" href="/coming_soon" style="margin-top: 10px;font-size:15px;">Training</a>
 				</li>
 				<% if user_signed_in? %>
-				  <li><%= link_to 'Edit profile', edit_user_registration_path, :style => "margin-top: 10px; font-size:15px", :class => 'page-scroll' %></li>
 				  <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :style => "margin-top: 10px; font-size:15px", :class => 'page-scroll' %></li>
 			  <% else %>
 				  <li><%= link_to "Sign up", new_user_registration_path, :style => "margin-top: 10px; font-size:15px", :class => 'navbar-link'  %></li>

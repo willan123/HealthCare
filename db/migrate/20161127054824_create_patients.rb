@@ -6,6 +6,8 @@ class CreatePatients < ActiveRecord::Migration[5.0]
       t.date :conception_date
       t.string :phone
       t.string :location
+      t.integer :condition
+      t.boolean :seen
 
       t.timestamps
     end
