@@ -8,5 +8,6 @@ class DashboardController < ApplicationController
   end
 
   def patients
+    @patients = current_user.patients
   end
 end

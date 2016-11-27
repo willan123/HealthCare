@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'dashboard/schedule'
   get 'dashboard/patients'
 
-  get 'pages' => 'pages#index'
+  get 'home' => 'pages#index'
 
 
   get 'messages/sms'
